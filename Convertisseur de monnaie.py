@@ -18,351 +18,183 @@ def conversion():
 
     if entree == 'Dollar US' and vers == 'Euro':
         total = montant * 0.92
-        Historique.append(montant)
-        Historique.append('Dollars')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Euro')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Dollars US' + " " + "=" + str(total) + " " + "Euro" + "\n")
+
 
     elif entree == "Dollar US" and vers == "Livre Sterling":
         total = montant * 0.82
-        Historique.append(montant)
-        Historique.append('Dollars')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Livre Sterling')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Dollars US' + " " + "=" + str(total) + " " + "Livre Sterling" + "\n")
 
     elif entree == "Dollar US" and vers == "Yen":
         total = montant * 128.90
-        Historique.append(montant)
-        Historique.append('Dollars')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yen')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Dollars US' + " " + "=" + str(total) + " " + "Yen" + "\n")
 
     elif entree == "Dollar US" and vers == "Yuan":
         total = montant * 6.78
-        Historique.append(montant)
-        Historique.append('Dollars')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yuan')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Dollars US' + " " + "=" + str(total) + " " + "Yuan" + "\n")
 
     elif entree == "Dollar US" and vers == "Dinar Tunisien":
         total = montant * 3.07
-        Historique.append(montant)
-        Historique.append('Dollars')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dinar Tunisien')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Dollars US' + " " + "=" + str(total) + " " + "Dinar Tunisien" + "\n")
 
     elif entree == "Dollar US" and vers == "Dollar US":
         total = montant * 1
-        Historique.append(montant)
-        Historique.append('Dollars')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dollars US')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Dollars US' + " " + "=" + str(total) + " " + "Dollars US" + "\n")
 
     # Conversion avec base Euro
 
     elif entree == "Euro" and vers == "Dollar US":
         total = montant * 1.08
-        Historique.append(montant)
-        Historique.append('Euro')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dollar US')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Euro' + " " + "=" + str(total) + " " + "Dollars US" + "\n")
 
     elif entree == "Euro" and vers == "Livre Sterling":
         total = montant * 0.89
-        Historique.append(montant)
-        Historique.append('Euro')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Livre Sterling')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Euro' + " " + "=" + str(total) + " " + "Livre Sterling" + "\n")
 
     elif entree == "Euro" and vers == "Yen":
         total = montant * 139.37
-        Historique.append(montant)
-        Historique.append('Euro')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yen')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Euro' + " " + "=" + str(total) + " " + "Yen" + "\n")
 
 
     elif entree == "Euro" and vers == "Yuan":
         total = montant * 7.33
-        Historique.append(montant)
-        Historique.append('Euro')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yuan')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Euro' + " " + "=" + str(total) + " " + "Yuan" + "\n")
 
 
     elif entree == "Euro" and vers == "Dinar Tunisien":
         total = montant * 3.32
-        Historique.append(montant)
-        Historique.append('Euro')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dinar Tunisien')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Euro' + " " + "=" + str(total) + " " + "Dinar Tunisien" + "\n")
 
 
     elif entree == "Euro" and vers == "Euro":
         total = montant * 1
-        Historique.append(montant)
-        Historique.append('Euro')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Euro')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Euro' + " " + "=" + str(total) + " " + "Euro" + "\n")
 
 
     # Conversion avec base Livre Sterling
 
     elif entree == "Livre Sterling" and vers == "Dollar US":
         total = montant * 1.22
-        Historique.append(montant)
-        Historique.append('Livre Sterling')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dollar US')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Livre Sterling' + " " + "=" + str(total) + " " + "Dollars US" + "\n")
 
 
     elif entree == "Livre Sterling" and vers == "Euro":
         total = montant * 1.13
-        Historique.append(montant)
-        Historique.append('Livre Sterling')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Euro')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Livre Sterling' + " " + "=" + str(total) + " " + "Euro" + "\n")
 
     elif entree == "Livre Sterling" and vers == "Yen":
         total = montant * 157.25
-        Historique.append(montant)
-        Historique.append('Livre Sterling')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yen')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Livre Sterling' + " " + "=" + str(total) + " " + "Yen" + "\n")
 
     elif entree == "Livre Sterling" and vers == "Yuan":
         total = montant * 8.27
-        Historique.append(montant)
-        Historique.append('Livre Sterling')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yuan')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Livre Sterling' + " " + "=" + str(total) + " " + "Yuan" + "\n")
 
     elif entree == "Livre Sterling" and vers == "Dinar Tunisien":
         total = montant * 3.75
-        Historique.append(montant)
-        Historique.append('Livre Sterling')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dinar Tunisien')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Livre Sterling' + " " + "=" + str(total) + " " + "Dinar Tunisien" + "\n")
 
     elif entree == "Livre Sterling" and vers == "Livre Sterling":
         total = montant * 1
-        Historique.append(montant)
-        Historique.append('Livre Sterling')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Livre Sterling')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Livre Sterling' + " " + "=" + str(total) + " " + "Livre Sterling" + "\n")
 
     # Conversion avec base Yen
 
     elif entree == "Yen" and vers == "Dollar US":
         total = montant * 0.0078
-        Historique.append(montant)
-        Historique.append('Yen')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dollar US')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yen' + " " + "=" + str(total) + " " + "Dollar US" + "\n")
 
     elif entree == "Yen" and vers == "Euro":
         total = montant * 0.0072
-        Historique.append(montant)
-        Historique.append('Yen')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Euro')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yen' + " " + "=" + str(total) + " " + "Euro" + "\n")
 
     elif entree == "Yen" and vers == "Livre Sterling":
-        total = montant * 0.0064
-        Historique.append(montant)
-        Historique.append('Yen')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Livre Sterling')
-        Historique.append('\n')
+        total = montant * 0.0063
+        Historique.append(str(montant) + " " + 'Yen' + " " + "=" + str(total) + " " + "Livre Sterling" + "\n")
 
     elif entree == "Yen" and vers == "Yuan":
         total = montant * 0.053
-        Historique.append(montant)
-        Historique.append('Yen')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yuan')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yen' + " " + "=" + str(total) + " " + "Yuan" + "\n")
 
     elif entree == "Yen" and vers == "Dinar Tunisien":
         total = montant * 0.024
-        Historique.append(montant)
-        Historique.append('Yen')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dinar Tunisien')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yen' + " " + "=" + str(total) + " " + "Dianr Tunisien" + "\n")
 
     elif entree == "Yen" and vers == "Yen":
         total = montant * 1
-        Historique.append(montant)
-        Historique.append('Yen')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yen')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yen' + " " + "=" + str(total) + " " + "Yen" + "\n")
 
     # Conversion avec base Yuan
 
     elif entree == "Yuan" and vers == "Dollar US":
         total = montant * 0.15
-        Historique.append(montant)
-        Historique.append('Yuan')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dollar US')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yuan' + " " + "=" + str(total) + " " + "Dollar US" + "\n")
 
     elif entree == "Yuan" and vers == "Euro":
         total = montant * 0.14
-        Historique.append(montant)
-        Historique.append('Yuan')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Euro')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yuan' + " " + "=" + str(total) + " " + "Euro" + "\n")
 
     elif entree == "Yuan" and vers == "Livre Sterling":
         total = montant * 1.12
-        Historique.append(montant)
-        Historique.append('Yuan')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Livre Sterling')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yuan' + " " + "=" + str(total) + " " + "Livre Sterling" + "\n")
 
     elif entree == "Yuan" and vers == "Yen":
         total = montant * 19.01
-        Historique.append(montant)
-        Historique.append('Yuan')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yen')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yuan' + " " + "=" + str(total) + " " + "Yen" + "\n")
 
     elif entree == "Yuan" and vers == "Dinar Tunisien":
         total = montant * 0.45
-        Historique.append(montant)
-        Historique.append('Yuan')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dinar Tunisinen')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yuan' + " " + "=" + str(total) + " " + "Dinar Tunisien" + "\n")
 
     elif entree == "Yuan" and vers == "Yuan":
         total = montant * 1
-        Historique.append(montant)
-        Historique.append('Yuan')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dinar Tunisien')
-        Historique.append('\n')
+        Historique.append(str(montant) + " " + 'Yuan' + " " + "=" + str(total) + " " + "Yuan" + "\n")
         
     # Conversion avec base Dinar Tunisien
 
-    elif entree == "Dinnar Tunisien" and vers == "Dollar US":
+    elif entree == "Dinar Tunisien" and vers == "Dollar US":
         total = montant * 0.33
-        Historique.append(montant)
-        Historique.append('Dinar Tunisien')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dollard US')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Dinar Tunisien' + " " + "=" + str(total) + " " + "Dollar US" + "\n")
 
-    elif entree == "Dinnar Tunisien" and vers == "Euro":
+    elif entree == "Dinar Tunisien" and vers == "Euro":
         total = montant * 0.30
-        Historique.append(montant)
-        Historique.append('Dinar Tunisien')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Euro')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Dinar Tunisien' + " " + "=" + str(total) + " " + "Euro" + "\n")
 
-    elif entree == "Dinnar Tunisien" and vers == "Livre Sterling":
+    elif entree == "Dinar Tunisien" and vers == "Livre Sterling":
         total = montant * 0.27
-        Historique.append(montant)
-        Historique.append('Dinar Tunisien')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Livre Sterling')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Dinar Tunisien' + " " + "=" + str(total) + " " + "Livre Sterling" + "\n")
 
-    elif entree == "Dinnar Tunisien" and vers == "Yen":
+    elif entree == "Dinar Tunisien" and vers == "Yen":
         total = montant * 41.99
-        Historique.append(montant)
-        Historique.append('Dinar Tunisien')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yen')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Dinar Tunisien' + " " + "=" + str(total) + " " + "Yen" + "\n")
 
-    elif entree == "Dinnar Tunisien" and vers == "Yuan":
+    elif entree == "Dinar Tunisien" and vers == "Yuan":
         total = montant * 2.21
-        Historique.append(montant)
-        Historique.append('Dinar Tunisien')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Yuan')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Dinar Tunisien' + " " + "=" + str(total) + " " + "Yuan" + "\n")
 
-    elif entree == "Dinnar Tunisien" and vers == "Dinar Tunisien":
+    elif entree == "Dinar Tunisien" and vers == "Dinar Tunisien":
         total = montant * 1
-        Historique.append(montant)
-        Historique.append('Dinar Tunisien')
-        Historique.append('=')
-        Historique.append(total)
-        Historique.append('Dinar Tunisen')
-        Historique.append('\n')
+        Historique.append(
+            str(montant) + " " + 'Dinar Tunisien' + " " + "=" + str(total) + " " + "Dinar Tunisien" + "\n")
 
     print(Historique)
-    tk.Label(fenetre, text=Historique, bg='#d8dfe3', fg='black', width=35, height=5).place(x=10, y=200)
+    tk.Label(fenetre, text=Historique, bg='#d8dfe3', fg='black', width=45, height=5).place(x=10, y=200)
 
     text.set(total)
 
 
 fenetre = tk.Tk()
-fenetre.geometry('300x300')
+fenetre.geometry('350x300')
 fenetre.title("Convertisseur de Monnaie")
 
 variable = tk.StringVar(fenetre)
